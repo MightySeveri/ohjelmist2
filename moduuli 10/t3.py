@@ -36,6 +36,7 @@ class Talo:
         else:
             print("Virhe: Hissin numero ei ole olemassa!")
 
+#seuraavaan for looppiin sain apua stackoverflowsta ja tiedän mitä enumerate tekee
     def palohälytys(self):
         print("Palohälytys! Kaikki hissit siirtyvät pohjakerrokseen!")
         for i, hissi in enumerate(self.hissit):
