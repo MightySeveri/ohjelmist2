@@ -17,6 +17,7 @@ class Auto:
         if self.tamanhetkinennopeus > 0:
             self.kuljettumatka = self.tamanhetkinennopeus * tunti
 
+
 auto1 = Auto("ABC-123", 142 )
 print(f"rekisteritunnus on {auto1.rekisteritunnus}, huippunopeus {auto1.huippunopeus} km/h, tämänhetkinen nopeus on {auto1.tamanhetkinennopeus}, auton kuljettu matka on {auto1.kuljettumatka}")
 
