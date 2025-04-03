@@ -1,4 +1,3 @@
-<!-- löysin ohjeistuksen tähän stackoverflowsta -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +6,15 @@
 </head>
 <body>
   <h1>Osallistujien lista</h1>
-  <button onclick="kysyOsallistujat()">Syötä osallistujat</button>
-  <ol id="osallistujaLista"></ol>
+  <button onclick="nimi()">Syötä koiran nimi</button>
+  <ul id="koiraLista"></ul>
 
   <script>
-    function kysyOsallistujat() {
-      const määrä = parseInt(prompt("Kuinka monta osallistujaa?"));
-      if (isNaN(määrä) || määrä <= 0) {
-        alert("Anna kelvollinen numero.");
-        return;
-      }
+      const maara = 6;
 
       const nimet = [];
 
-      for (let i = 0; i < määrä; i++) {
+      for (let i = 0; i < maara; i++) {
         const nimi = prompt(`Anna osallistuja ${i + 1} nimi:`);
         if (nimi) {
           nimet.push(nimi.trim());
@@ -29,7 +23,7 @@
 
       nimet.sort();
 
-      const lista = document.getElementById("osallistujaLista");
+      const lista = document.getElementById("koiraLista");
       lista.innerHTML = "";
 
       for (let nimi of nimet) {
